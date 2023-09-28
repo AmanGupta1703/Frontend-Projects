@@ -1,0 +1,58 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>02 Currency Converter</title>
+		<link rel="stylesheet" href="./css/styles.css" />
+		<script defer src="./js/main.js"></script>
+	</head>
+	<body>
+		<nav>
+			<div class="logo">CurrencyConverter</div>
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/">About</a></li>
+				<li><a href="/">Contact Us</a></li>
+			</ul>
+		</nav>
+		<div class="container">
+			<h1>
+				Base Currency Selector: Choose Your Currency, Get Instant
+				Conversions!
+			</h1>
+			<form class="form">
+				<label>
+					<span>Choose a Quantity: </span>
+					<input type="number" name="quantity" min="1" max="10" />
+				</label>
+				<label for="currency">
+					<span>
+						Currency Command Center: Handpick Your Base
+						Currency!</span
+					>
+					<select name="currency" id="currency-list"></select>
+				</label>
+				<button type="submit" class="btn">Submit</button>
+			</form>
+			<div class="output">
+				<h2>Amount In Different Countries</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Currency</th>
+							<th>Code</th>
+							<th>Value</th>
+						</tr>
+					</thead>
+					<tbody id="output-container"></tbody>
+				</table>
+			</div>
+		</div>
+		<footer>
+			<p>
+				&copy; <span class="current-year"></span> Copywrite | All Rights
+				Reserved
+			</p>
+		</footer>
+	</body>
+</html>
