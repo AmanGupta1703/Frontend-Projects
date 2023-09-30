@@ -1,0 +1,66 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>03 Password Manager</title>
+		<link rel="stylesheet" href="./css/style.css" />
+		<script defer src="./javascript/script.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div class="logo">passX</div>
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="/">About Us</a></li>
+					<li><a href="/">Contact Us</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div class="container">
+				<h1>Your Password Manager</h1>
+				<p>
+					We're thrilled to have you here. Your digital life contains
+					a myriad of passwords, and we know how challenging it can be
+					to manage them all. That's why we're here to make it easy
+					for you.
+				</p>
+				<h2>Your Passwords</h2>
+                <p class="alert">copied</p>
+				<div class="password-container">
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Website Name</th>
+								<th>Username</th>
+								<th>Your Password</th>
+								<th>Delete</th>
+							</tr>
+						</thead>
+						<tbody class="password-list"></tbody>
+					</table>
+				</div>
+				<h3>Add a Password</h3>
+				<form class="form">
+					<label for="website">Website:</label>
+					<input type="text" id="website" name="website" required />
+					<br /><br />
+
+					<label for="username">Username:</label>
+					<input type="text" id="username" name="username" required />
+					<br /><br />
+
+					<label for="password">Password:</label>
+					<input
+						type="password"
+						id="password"
+						name="password"
+						required />
+					<br />
+					<button class="btn" type="submit">Submit</button>
+				</form>
+			</div>
+		</main>
+	</body>
+</html>

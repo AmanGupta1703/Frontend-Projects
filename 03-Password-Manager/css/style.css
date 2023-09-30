@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,300&family=Poppins:wght@300;400;600&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+button,
+input {
+	font: inherit;
+}
+
+button {
+	cursor: pointer;
+	border: none;
+}
+
+body {
+	color: #e4f1ff;
+	font-family: "Poppins", sans-serif;
+
+	background-image: linear-gradient(
+		to right bottom,
+		#793fdf 50%,
+		#b4d8ff,
+		#333
+	);
+	min-height: 100vh;
+}
+
+header {
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+	cursor: pointer;
+	color: #e4f1ff;
+	background-color: #793fdf;
+	font-family: "Noto Sans", sans-serif;
+	padding: 23px 30px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo {
+	text-transform: capitalize;
+	font-size: 25px;
+}
+
+ul {
+	display: flex;
+	column-gap: 23px;
+}
+
+ul li {
+	list-style: none;
+}
+
+ul li a {
+	color: inherit;
+}
+
+ul li a:hover {
+	color: #b4d8ff;
+}
+
+.container {
+	backdrop-filter: blur(10px);
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 20px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	max-width: 75ch;
+	padding: 30px;
+	margin: 40px auto;
+}
+
+.container td,
+th {
+	border: 6px inset #e4f1ff;
+	border-collapse: collapse;
+	padding: 5px 13px;
+}
+
+.password-item a {
+	color: inherit;
+}
+
+.password-item td {
+	position: relative;
+	cursor: pointer;
+	text-align: center;
+}
+
+.copy-btn {
+	cursor: pointer;
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	top: 25%;
+	right: 10%;
+}
+
+.password-item button {
+	background: transparent;
+	border: none;
+}
+
+.password-item img {
+	width: 20px;
+	display: block;
+}
+
+.container h1,
+h2,
+h3 {
+	margin: 23px 0;
+}
+
+[type="text"],
+[type="password"],
+[type="email"] {
+	background-color: transparent;
+	border: 1px solid #e4f1ff;
+	color: #b4d8ff;
+	padding: 6px 10px;
+	width: 250px;
+	border-radius: 5px;
+	margin-left: 10px;
+}
+
+.btn {
+	color: #e4f1ff;
+	background-image: linear-gradient(315deg, #b4d8ff 0%, #793fdf 74%);
+	background-position: 100%;
+	border-radius: 6px;
+	display: inline-block;
+	font-weight: bold;
+	padding: 10px 20px;
+	letter-spacing: 2px;
+	margin-top: 25px;
+	transition: 0.5s all;
+}
+
+.btn:hover {
+	background-image: linear-gradient(315deg, #793fdf 0%, #b4d8ff 74%);
+	color: #fff;
+}
+
+@media (max-width: 710px) {
+	.container {
+		margin: 40px 30px;
+	}
+}
+
+.alert {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 6px 12px;
+	color: #e4f1ff;
+	background: #793fdf;
+	border-radius: 6px;
+	margin-top: 15px;
+	transition: 0.3s all ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.alert.show {
+    opacity: 1;
+    visibility: visible;
+}
