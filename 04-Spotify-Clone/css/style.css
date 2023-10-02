@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	display: block;
+}
+
+body {
+	background-color: #f3f3f3;
+	min-height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+header {
+	background-color: #181413;
+}
+
+nav {
+	font-family: "Ubuntu", sans-serif;
+	padding: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo {
+	color: #efefef;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.logo img {
+	width: 40px;
+}
+
+.logo span {
+	font-weight: bolder;
+	font-size: 24px;
+}
+
+.nav {
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	column-gap: 40px;
+}
+
+.nav a {
+	color: #efefef;
+	border-bottom: 3px solid transparent;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	padding-bottom: 3px;
+	transition: 0.3s all;
+}
+
+.nav a:hover {
+	border-color: #efefef;
+}
+
+.container {
+	color: #efefef;
+	background: url("../images/bg.jpg") #181413;
+	background-size: cover;
+	border-radius: 20px;
+	font-family: "Varela Round", sans-serif;
+
+	display: flex;
+	margin: 23px auto;
+	padding: 23px;
+	width: 70vw;
+}
+
+.song-item-container {
+	margin-top: 44px;
+	height: 30vw;
+	overflow: scroll;
+	padding-right: 15px;
+}
+
+.song-item {
+	color: #181413;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #efefef;
+	height: 50px;
+	min-width: 570px;
+	border-radius: 34px;
+	padding-right: 8px;
+}
+
+.song-item:not(:last-child) {
+	margin-bottom: 18px;
+}
+
+.song-item img {
+	height: 100%;
+	border-top-left-radius: 34px;
+	border-bottom-left-radius: 34px;
+	width: 3rem;
+	object-fit: cover;
+}
+
+.time-stamp {
+	margin: 0 12px 0 0;
+}
+
+.time-stamp i {
+	cursor: pointer;
+}
+
+.bottom {
+	color: #efefef;
+	font-family: "Varela Round", sans-serif;
+	background-color: #181413;
+	padding: 35px 25px;
+
+	display: flex;
+	flex-direction: column;
+	row-gap: 12px;
+	align-items: center;
+	justify-content: center;
+}
+
+[type="range"] {
+	cursor: pointer;
+	display: block;
+	width: 80vw;
+}
+
+.bottom i {
+	cursor: pointer;
+}
+
+.song-info {
+	display: flex;
+	align-items: center;
+	left: 10.5vw;
+	position: absolute;
+}
+
+.song-info img {
+	width: 42px;
+	opacity: 0;
+	transition: 1s all ease-in;
+}
+
+.song-info img.show {
+	opacity: 1;
+}
