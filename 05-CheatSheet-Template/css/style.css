@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+}
+
+header {
+	color: #efefef;
+	background: #2d2d2d;
+	font-family: "Potta One", cursive;
+	padding: 15px 0;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 8px;
+}
+
+.logo img {
+	width: 32px;
+}
+
+.container {
+	background-color: #f5f5f5;
+	font-weight: bold;
+	width: 70vw;
+	padding: 32px 40px;
+	margin: 0 auto;
+}
+
+.container li:not(:last-child) {
+	margin-bottom: 24px;
+}
