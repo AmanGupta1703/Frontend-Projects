@@ -1,0 +1,76 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	/* background: url(../images/bg.jpeg) no-repeat;  */
+	/* background-size: cover; */
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	background-color: #040f23;
+	overflow: hidden;
+	min-height: 100vh;
+}
+
+.icons {
+	display: inline-flex;
+	flex-direction: column;
+	gap: 12px;
+    padding-top: 10px;
+}
+
+.icon {
+	color: #efefef;
+	font-size: 12px;
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+	row-gap: 8px;
+}
+
+.taskbar {
+	background: #f3f3f3;
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	z-index: 2;
+	padding: 4px 0;
+}
+
+.taskbar img {
+	cursor: pointer;
+	display: inline-block;
+}
+
+.right {
+	position: absolute;
+	right: 0;
+}
+
+.start-menu {
+	position: absolute;
+	bottom: -100%;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	transition: all 0.3s ease;
+	z-index: 1;
+}
+
+.show {
+	bottom: 59px;
+}
+
+.start-menu img {
+	border-radius: 8px;
+}
+
+video {
+	width: 100vw;
+	height: 100vh;
+	object-fit: cover;
+}
