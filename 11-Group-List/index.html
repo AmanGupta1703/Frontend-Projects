@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>11 Group List</title>
+		<link
+			rel="shortcut icon"
+			href="./images/add-icon.svg"
+			type="image/x-icon" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<script defer type="module" src="./js/script.js"></script>
+	</head>
+	<body>
+		<main class="main">
+			<section class="main__container">
+				<nav class="main__sidebar">
+					<ul class="nav">
+						<li class="nav__item">
+							<a class="nav__link" href="/"
+								><img src="./images/message.svg" alt="message"
+							/></a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link nav__link--active" href="/"
+								><img src="./images/group-list.svg" alt="user"
+							/></a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="/"
+								><img src="./images/icon.svg" alt="user"
+							/></a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="/"
+								><img src="./images/settings.svg" alt="user"
+							/></a>
+						</li>
+					</ul>
+				</nav>
+				<section class="content main__content">
+					<header class="content__header">
+						<h1 class="primary-heading">
+							<span>&larr;</span>
+							<span>Groups</span>
+						</h1>
+						<div class="alignment">
+							<span class="alignment__horizontal active">
+								<img
+									src="./images/horizontal-align.svg"
+									alt="" />
+							</span>
+							<span class="alignment__vertical">
+								<img src="./images/vertical-align.svg" alt="" />
+							</span>
+						</div>
+					</header>
+					<article class="group-list">
+						<div class="group-item create-new-group">
+							<div class="create-new-group__circle add-group">
+								<img src="./images/add-icon.svg" alt="" />
+							</div>
+							<h2 class="create-new-group__heading">
+								Create Group
+							</h2>
+						</div>
+					</article>
+				</section>
+			</section>
+		</main>
+		<div class="overlay overlay--black"></div>
+		<section class="popup popup--form">
+			<header class="popup__header">
+				<div class="popup__circle">
+					<button class="btn btn--close" role="img">&times;</button>
+				</div>
+			</header>
+			<h1 class="popup__heading">Create A New Group</h1>
+			<form class="form">
+				<div class="form__group">
+					<input
+						type="text"
+						name="avatar"
+						id="avatar"
+						placeholder="Enter Your Group Image URL"
+						class="form__input form__input--avatar" />
+				</div>
+				<div class="form__group">
+					<input
+						type="text"
+						name="name"
+						id="name"
+						placeholder="Enter Your Group Name"
+						class="form__input form__input--name" />
+				</div>
+				<button type="submit" class="btn btn--submit">
+					Create Group
+				</button>
+			</form>
+		</section>
+	</body>
+</html>
